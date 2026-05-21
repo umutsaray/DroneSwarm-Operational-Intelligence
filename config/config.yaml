@@ -1,0 +1,63 @@
+{
+  "project": {
+    "name": "Drone Swarm Threat Assessment System",
+    "random_seed": 42
+  },
+  "paths": {
+    "data_dir": "data",
+    "images_dir": "data/images",
+    "labels_dir": "data/labels",
+    "splits_dir": "data/splits",
+    "experiments_dir": "experiments",
+    "models_dir": "models",
+    "paper_outputs_dir": "paper_outputs"
+  },
+  "dataset": {
+    "image_extensions": [".jpg", ".jpeg", ".png"],
+    "train_ratio": 0.70,
+    "val_ratio": 0.15,
+    "test_ratio": 0.15
+  },
+  "augmentation": {
+    "enabled": true,
+    "output_dir": "data_augmented",
+    "copies_per_image": 4,
+    "min_box_area": 0.0001,
+    "seed": 42
+  },
+  "models": [
+    {
+      "name": "yolov8n",
+      "base_weights": "yolov8n.pt",
+      "drone_class_ids": [0]
+    },
+    {
+      "name": "yolov8s",
+      "base_weights": "yolov8s.pt",
+      "drone_class_ids": [0]
+    }
+  ],
+  "training": {
+    "epochs": 80,
+    "imgsz": 640,
+    "batch": 8,
+    "device": "cpu",
+    "workers": 0,
+    "patience": 50,
+    "pretrained": true
+  },
+  "inference": {
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "threat_score": {
+    "alpha": 0.34,
+    "beta": 0.33,
+    "gamma": 0.33,
+    "N_max": 15,
+    "D_max": 50.0,
+    "d_max": 0.70710678,
+    "protected_region_center": [0.5, 0.5],
+    "min_swarm_area": 0.000001
+  }
+}

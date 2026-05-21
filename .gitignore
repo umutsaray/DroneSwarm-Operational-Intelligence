@@ -1,0 +1,69 @@
+# Python caches and local bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments and local configuration
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+
+# IDE and OS files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+tmp/
+temp/
+
+# AI/ML generated artifacts
+runs/
+outputs/
+experiments/
+data_augmented/
+wandb/
+mlruns/
+tensorboard/
+
+# Model checkpoints and heavy binaries
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.engine
+*.tflite
+
+# Compressed archives
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.tgz
+
+# Optional local full datasets
+Drone_Swarm_Dataset/
+full_dataset/
+raw_data/
+
+# Keep the lightweight release sample and paper outputs tracked.
+!data/
+!data/images/
+!data/labels/
+!data/splits/
+!paper_outputs/

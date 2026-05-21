@@ -1,0 +1,3 @@
+Model,Average_Inference_Time_ms,Estimated_FPS,Device,CUDA_Available,GPU,Input_Resolution,Warmup_Runs,Test_Images,Weights
+yolov8n,40.241,24.85,cpu,False,NVIDIA GeForce RTX 3050 Laptop GPU,640,10,19,models/yolov8n/best.pt not bundled
+yolov8s,93.164,10.734,cpu,False,NVIDIA GeForce RTX 3050 Laptop GPU,640,10,19,models/yolov8s/best.pt not bundled

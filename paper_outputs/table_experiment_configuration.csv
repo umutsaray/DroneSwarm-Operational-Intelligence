@@ -1,0 +1,17 @@
+Parameter,Value
+Hardware Platform,Windows-11-10.0.26200-SP0
+Processor,"Intel64 Family 6 Model 186 Stepping 2, GenuineIntel"
+RAM,Unknown (not measured)
+GPU,NVIDIA GeForce RTX 3050 Laptop GPU
+GPU Memory,4096 MiB
+Framework,Ultralytics 8.4.51; PyTorch 2.12.0+cpu
+Input Resolution,640
+Batch Size,8
+Models,"yolov8n, yolov8s"
+Epochs,80
+Train Images,81
+Validation Images,17
+Test Images,19
+Augmented Train Images,324
+Total Training Images After Augmentation,405
+Validation/Test Augmented,No

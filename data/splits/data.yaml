@@ -1,0 +1,6 @@
+train: C:/Users/UMUT/Downloads/drone_swarm_threat_analyzer_app/DroneSwarm-Operational-Intelligence/data/splits/train.txt
+val: C:/Users/UMUT/Downloads/drone_swarm_threat_analyzer_app/DroneSwarm-Operational-Intelligence/data/splits/val.txt
+test: C:/Users/UMUT/Downloads/drone_swarm_threat_analyzer_app/DroneSwarm-Operational-Intelligence/data/splits/test.txt
+nc: 1
+names:
+  0: drone
